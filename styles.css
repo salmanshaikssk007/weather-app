@@ -1,0 +1,114 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    background-size:cover;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 120%;
+}
+.card {
+    background: #000000d0;
+    color: white;
+    padding: 2rem;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1rem;
+  }
+  #main-tag{
+      font-size: 2.5rem;
+  }
+ul li {
+    list-style: none;
+}  
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    margin: .5rem;
+    padding: .1rem;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    outline: none;
+    background: rgba(125, 125, 125, 0.169);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.search input{
+    outline: none;
+    border: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: rgba(124, 124, 124, 0.169);
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+}
+h1.location_temp {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+  .weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+button:hover {
+    background: #7c7c7c6b;
+  }
+  .location_desc {
+    text-transform: capitalize;
+  }
+@media screen and (max-width : 425px)  {
+    body{
+        flex-direction: column;
+        background-size:cover;
+        font-size: 70%;
+    }
+    .card {
+        padding: 1rem;
+        border-radius: 30px;
+        width: 100%;
+        max-width: 300px;
+      }
+    .main-card{
+        max-height: auto;
+    }
+    #main-tag{
+        font-size: 1rem;
+    }
+    button{
+        margin: .3rem;
+        padding: .1rem;
+        height: 30px;
+        width: 30px;
+    }
+    .search input{
+       
+        padding: 0.3rem .1rem;
+        font-size: 100%;
+        width: calc(100% - 10px);
+    }
+    h1.location_temp {
+        font-size: 20px;
+        margin: 0;
+        margin-bottom: 1rem;
+      }
+}
